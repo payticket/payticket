@@ -113,23 +113,21 @@
 							</div>
 						</section>
 						<h3 class="pt-razd">Покупатель</h3>
-						<form method="POST" id="form-pay" action="https://money.yandex.ru/quickpay/confirm.xml">
-							<input type="hidden" name="receiver" value="410016147817378">
-							<input type="hidden" name="formcomment" value="компания по продаже билетов 'Best-tickets'"> 
-							<input type="hidden" name="short-dest" value="Покупка билета"> 
-							<input type="hidden" name="label" value="$order_id">
-							<input type="hidden" name="quickpay-form" value="small">
-							<input type="hidden" name="targets" value="Покупка ЖД билета">
-							<input type="hidden" name="sum" value="3912.25" data-type="number">    <input type="hidden" name="comment" value="Хотелось бы получить дистанционное управление.">
-							<input type="hidden" name="need-fio" value="false">    <input type="hidden" name="need-email" value="false">
-							<input type="hidden" name="need-phone" value="false">
-							<input type="hidden" name="need-address" value="false">
-							<label>
-								<input type="radio" name="paymentType" value="PC">Яндекс.Деньгами</label>
-							<label>
-								<input type="radio" name="paymentType" value="AC">Банковской картой</label>
-							<input type="submit" value="Оплатить билет">
+						
+						<form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
+							<input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJwdWJsaWNfa2V5IjoiaTQzNjk1MTcxMTY0IiwiYW1vdW50IjoiMzkxMiwyNSIsImN1cnJlbmN5IjoiUlVCIiwiZGVzY3JpcHRpb24iOiLQntC/0LvQsNGC0LAg0LHQuNC70LXRgtCwIiwidHlwZSI6ImJ1eSIsImxhbmd1YWdlIjoicnUifQ==" />
+							<input type="hidden" name="signature" value="QZZmDRwrfFeik3QlKZFoSalmpdo=" />
+							<button style="border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 20px !important;
+								color: #fff !important; font-size:16px !important; font-weight: 600 !important; font-family:OpenSans, sans-serif; cursor: pointer !important; border-radius: 2px !important;
+								background: rgb(122,183,43) !important;"onmouseover="this.style.opacity='0.5';" onmouseout="this.style.opacity='1';">
+								<img src="https://static.liqpay.ua/buttons/logo-small.png" name="btn_text"
+									style="margin-right: 7px !important; vertical-align: middle !important;"/>
+								<span style="vertical-align:middle; !important">Оплатить</span>
+							</button>
 						</form>
+						
+
+
 					</div>
 				</div>
 			</div>
