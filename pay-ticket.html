@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	
+	<base href="/">
 
 	<title>Билеты онлайн - самые дишевые билеты!</title>
 	<meta name="description" content="">
@@ -53,19 +53,19 @@
 								<p>Отправление</p>
 								<h3>22:45</h3>
 								<p>Вт 13 Фев</p>
-								<p>Днепр главный</p>
+								<p>Харьков-Пассажирский</p>
 							</div>
 							<div class="pt-sc-one-block">
 								<p>В пути</p>
-								<h3>8 ч 34 мин</h3>
+								<h3>18 ч 34 мин</h3>
 								<p>прибытие на следующий день</p>
 								
 							</div>
 							<div class="pt-sc-one-block">
 								<p>Прибытие</p>
-								<h3>06:59</h3>
+								<h3>17:19</h3>
 								<p>Ср 14 Фев</p>
-								<p>Киев-Пассажирский</p>
+								<p>Махачкала</p>
 							</div>
 
 						</section>
@@ -108,13 +108,15 @@
 							</div>
 							<div class="pt-sc-three-block">
 								<p>3802руб.</p>
-								<p>114.25руб.</p>
-								<h3>3916.25руб.</h3>
+								<p>110.25руб.</p>
+								<h3>3912.25руб.</h3>
 							</div>
 						</section>
 						<h3 class="pt-razd">Покупатель</h3>
 						
-						<form method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
+
+							<p class="pt-dog">Нажимая кнопку оплатить вы соглашаетесь с <a href="dogovor.html">нашими условиями</a></p>
+						<form id="pt-form-op" method="POST" accept-charset="utf-8" action="https://www.liqpay.ua/api/3/checkout">
 							<input type="hidden" name="data" value="eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXkiLCJwdWJsaWNfa2V5IjoiaTQzNjk1MTcxMTY0IiwiYW1vdW50IjoiMzkxMiwyNSIsImN1cnJlbmN5IjoiUlVCIiwiZGVzY3JpcHRpb24iOiLQntC/0LvQsNGC0LAg0LHQuNC70LXRgtCwIiwidHlwZSI6ImJ1eSIsImxhbmd1YWdlIjoicnUifQ==" />
 							<input type="hidden" name="signature" value="QZZmDRwrfFeik3QlKZFoSalmpdo=" />
 							<button style="border: none !important; display:inline-block !important;text-align: center !important;padding: 7px 20px !important;
@@ -125,16 +127,29 @@
 								<span style="vertical-align:middle; !important">Оплатить</span>
 							</button>
 						</form>
-
-						
-
-
 					</div>
 				</div>
 			</div>
 		</div>
 		
-	
+	<footer class="pt-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="pt-id">Уникальный идентификатор пользовательской сессии 2302524794</p>
+
+					<p class="pt-sposob-op">
+						<i class="fa fa-3x fa-cc-visa" aria-hidden="true"></i>
+						<i class="fa fa-3x fa-cc-mastercard" aria-hidden="true"></i>
+					</p>
+					<div class="pt-footer-contacts">
+						<p><i class="fa fa-phone" aria-hidden="true"></i> 55-24-78, 28-63-11</p>
+						<p><i class="fa fa-map-o" aria-hidden="true"></i> г. Киев, ул.Леоновича, 7Д</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	
 	<script src="js/scripts.min.js"></script>
 

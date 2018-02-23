@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	
+	<base href="/">
 
 	<title>Билеты онлайн - самые дишевые билеты!</title>
 	<meta name="description" content="">
@@ -30,20 +30,69 @@
 
 	<!-- Custom HTML -->
 	<header id="s-2" style="background-image: url('img/bg2.jpg');">
-		<a href="https://payticket.github.io" class="header-logo"><i class="fa fa-ticket" aria-hidden="true"></i>best-tickets</a>
+		<a href="#s-2" class="header-logo"><i class="fa fa-ticket" aria-hidden="true"></i>best-tickets</a>
 		<h1>Покупка билетов в любую точку мира!</h1>
 		<h2>По самым выгодным ценам</h2>
 		<a href="#s-1" class="header-arrow"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 	</header>
-	<main style="background-image: url('img/bg3.jpg');" id="s-1">
-		
-				<div class="main-content"><a href="buy-ticket.html" class="btn-main">Заказать билет</a></div>	
-		<footer>
-			<p><i class="fa fa-phone" aria-hidden="true"></i>тел.55-24-78</p>
-			<p><i class="fa fa-map-o" aria-hidden="true"></i>г. Киев, ул.Леоновича, 7Д</p>
-		</footer>	
-	</main>
-		
+	<div class="section-but" id="s-1">
+		<main class="buy-ticket-main">
+			<form method="LINK" action="error.html">
+				
+				<div class="group-turn">
+					<i class="fa fa-map-marker" aria-hidden="true"></i><input class="group-turn-input" type="text" name="" placeholder="Откуда" required="">
+					<i class="fa fa-exchange" aria-hidden="true"></i>
+					<i class="fa fa-map-marker" aria-hidden="true"></i><input class="group-turn-input" type="text" name="" placeholder="Куда" required="">
+				</div>
+				<div class="group-date">
+					<label>Ориентировочная дата:</label>
+					<i class="fa fa-calendar" aria-hidden="true"></i><input type="text" placeholder="Отправления" required><i class="fa fa-calendar-check-o" aria-hidden="true"></i><input type="text" placeholder="Прибытия" required>
+				</div>
+				<div class="group-time">
+					<label>Ориентировочное время:</label>
+					<i class="fa fa-clock-o" aria-hidden="true"></i><input type="text" placeholder="Отправления" required><i class="fa fa-clock-o" aria-hidden="true"></i><input type="text" placeholder="Прибытия" required>
+				</div>
+				<div class="group-type">
+					<p>
+						<input type="radio" name="type" value="жд-транспорт" checked>
+						<i class="fa fa-train" aria-hidden="true" ></i>жд-транспорт
+					</p>
+					<p>
+						<input type="radio" name="type" value="авиа-транспорт" >
+						<i class="fa fa-plane" aria-hidden="true" ></i>авиа-транспорт
+					</p>
+					<p>
+						<input type="radio" name="type" value="авто-транспор" ><i class="fa fa-bus" aria-hidden="true"></i>
+						авто-транспор
+					</p>
+				</div>
+				<div class="fio">
+					<i class="fa fa-id-card-o" aria-hidden="true"></i><input type="text" name="" placeholder="ФИО" id="fio" required="">
+					<input type="submit" name="" value="Оформить билет" class="btn-main">
+				</div>
+			</form>
+			
+		</main>
+	</div>
+	
+	<footer class="pt-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="pt-id">Уникальный идентификатор пользовательской сессии 2302524794</p>
+
+					<p class="pt-sposob-op">
+						<i class="fa fa-3x fa-cc-visa" aria-hidden="true"></i>
+						<i class="fa fa-3x fa-cc-mastercard" aria-hidden="true"></i>
+					</p>
+					<div class="pt-footer-contacts">
+						<p><i class="fa fa-phone" aria-hidden="true"></i> 55-24-78, 28-63-11</p>
+						<p><i class="fa fa-map-o" aria-hidden="true"></i> г. Киев, ул.Леоновича, 7Д</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 	<script src="js/scripts.min.js"></script>
 
